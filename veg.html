@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: rgba(212, 122, 122, 0.521);
+        }
+        .box{
+            width: 100vw;
+            height: 450vh;
+        }
+        .title{
+            font-size: 50px;
+            align-items: center;
+            text-shadow: 4px 4px rgba(77, 70, 70, 0.521);
+        }
+        .cat{
+            font-size: 35px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+        }
+
+        .diff{
+            margin-top: 4px;
+            width: 80vw;
+            height: 20vh;
+            display: grid;
+            margin-left: 120px;
+            grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr;
+            grid-template-rows: repeat(7,(minmax(30px,(min-content)))) ;
+            grid-gap: 30px;
+            border-radius: 30px;
+            /* background-color: rgba(204, 119, 119, 0.918); */
+            text-align: center;
+            justify-content: center;
+            grid-column-gap: 20px;
+            padding: 20px;
+        }
+        .diff div{
+            background-color: rgba(165, 42, 42, 0.64);
+            border-radius: 8px;
+            grid-gap: 10px;
+            padding-top: 5px;
+            height: 40px;
+        }
+        a{
+            font-size: 20px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+        }
+        .int{
+            height: 40px;
+            margin-left: 20px;
+            width: 400px;
+            margin-top: 30px;
+            border-radius: 8px;
+            border-style: none;
+            border-bottom: non;
+            font-size: 20px;
+            padding: 4px;
+            padding-left: 20px;
+            background-color:rgba(165, 42, 42, 0.64);
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        .movi{
+            padding: 8px 8px 8px 8px ;
+            margin-top: 20px;
+            background-color: rgba(212, 122, 122, 0.521);
+            width: 100vw;
+            height: 320vh;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: repeat(15,300px);
+            grid-gap: 20px;
+        }
+        .movi div{
+            background-color: brown;
+            border-style: none;
+            border-radius: 10px;
+            /* box-shadow: 5px 5px rgba(78, 78, 78, 0.507); */
+            text-align: center;
+            justify-content: center;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+
+        }
+        .movi img{
+            margin-left: 1px;
+            height: 220px;
+            width: 300px;
+            border-radius: 8px;
+        }
+        .Next{
+            display: grid;
+            grid-template-columns: 100px 20px 20px 20px 20px 20px;
+            grid-template-rows: 20px;
+            grid-gap: 10px;
+            
+          
+        }
+       
+        .Next div{
+            /* background-color: blue; */
+            float: left;
+
+            
+        }
+        .copy{
+            margin-top: 40px;
+            margin-bottom: 12px;
+        }
+        .last{
+            border:2px solid rgba(0, 0, 0, 0.529);
+            padding: 8px;
+        }
+        /* .nav{
+            height: 40px;
+            background-color: aqua;
+            margin-top: 18px;
+            display: grid;
+            grid-template-columns: 2fr 2fr 2fr 2fr 1fr 1fr 2fr;
+            grid-row: 35px;
+            grid-gap: 10px;
+        }
+        .nav div{
+          
+            background-color: rgb(184, 238, 130);
+        } */
+       
+    </style>
+</head>
+<body>
+    
+    <div class="box">
+        <div class="title">
+            <center><h1><i><strong>Vegamovies</strong></i></h1></center>
+        </div>
+         <!-- <div class="nav">
+                <div>
+                 <h2>   Home</h2>
+                </div>
+                <div>
+                    
+                 
+                    <select class="">
+                        <option value="">Search move or wave serise</option>
+                        <option value="">Hollywood</option>
+                        <option value="">Bollywood</option>
+                        <option value="">SCi-fi</option>
+                        <option value="">Action</option>
+                        <option value="">Thrialer</option>
+                        <option value="">Crime</option>
+                        <option value="">Advanture</option>
+                        <option value="">Camedy</option>
+                        <option value="">Hindi</option>
+                        <option value="">English</option>
+                        <option value="">Korian</option>
+            
+                    </select>
+                </div>
+                <div>
+                    <h2>Webserise</h2>
+                </div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div> -->
+         <!-- </div> -->
+         <div class="diff">
+            <div><a href="#">Hollywood</a></div>
+            <div><a href="#">Bollywood</a></div>
+            <div>
+                <a href="#">Amazon Prime</a>
+            </div>
+            <div>
+                <a href="#">Netflix</a>
+            </div>
+            <div>
+                <a href="">Disney+Hotstar</a>
+            </div>
+            <div>
+                <a href="#">SonyLive</a>
+            </div>
+            <div>
+                <a href="#">Voot</a>
+            </div>
+            <div><a href="#">Jio Cenema</a></div>
+            <div><a href="#">Zee5</a></div>
+            <div><a href="#">Discover</a></div>
+            <div><a href="#">MX Player</a></div>
+            <div><a href="#">Punjabi Movies</a></div>
+         </div>
+        <div>
+           <div>
+           <center>
+            <label class="cat" for="">Category</label>
+            <select class="int">
+                <option value="">Search move or wave serise</option>
+                <option value="">Hollywood</option>
+                <option value="">Bollywood</option>
+                <option value="">SCi-fi</option>
+                <option value="">Action</option>
+                <option value="">Thrialer</option>
+                <option value="">Crime</option>
+                <option value="">Advanture</option>
+                <option value="">Camedy</option>
+                <option value="">Hindi</option>
+                <option value="">English</option>
+                <option value="">Korian</option>
+    
+            </select>
+           </center>
+           </div>
+        </div>
+
+        <div class="movi">
+            <div>
+                <div><img src="./66508a1184926e54cf6d781f0a307f3d.jpg" alt=""></div>
+                <div>
+                    <h2>Jawan</h2>
+                    <p>480p,720p,1080p</p>
+                </div>
+            </div>
+            <div>
+                <div><img src="./8f3812755af0825d07ca83f81a2e0aa8.jpg" alt=""></div>
+                <div>
+                    <h2>Bhoot Kadarr</h2>
+                    <p>480p,720p,1080p</p>
+                </div>
+            </div>
+            <div>
+                <div><img src="./bajrangi-bhaijaan-poster-3804.jpg" alt=""></div>
+                <div>
+                    <h2>Bajarngi Bhaijan</h2>
+                    <p>480p,720p,1080p</p>
+                </div>
+            </div>
+            <div>
+                <div><img src="./Bhimaa_1687936291.jpg" alt=""></div>
+                <div>
+                    <h2>Bhimaa</h2>
+                    <p>480p,720p,1080p</p>
+                </div>
+            </div>
+            <div>
+                <div><img src="./HD-wallpaper-pathan-movie-angry-look-movie-poster-actor-shahrukh-khan.jpg" alt=""></div>
+                <div>
+                    <h2>Pathan</h2>
+                    <p>480p,720p,1080p</p>
+                </div>
+            </div>
+            <div>
+                <div><img src="./image-9122019-b.jpg" alt=""></div>
+                <div>
+                    <h2>Thae moon</h2>
+                    <p>480p,720p,1080p</p>
+                </div>
+            </div>
+            <div>
+                <div><img src="./maxresdefault (1).jpg" alt=""></div>
+                <div>
+                    <h2>ggghv</h2>
+                    <p>480p,720p,1080p</p>
+                </div>
+            </div>
+            <div>
+                <div><img src="./maxresdefault.jpg" alt=""></div>
+                <div>
+                    <h2>Jawan</h2>
+                    <p>480p,720p,1080p</p>
+                </div>
+            </div>
+            <div>
+                <div><img src="./th (11).jpeg" alt=""></div>
+                <div>
+                    <h2>Salaar</h2>
+                    <p>480p,720p,1080p</p>
+                </div>
+            </div>
+            <div>
+                <div><img src="./th (10).jpeg" alt=""></div>
+                <div>
+                    <h2>Animal</h2>
+                    <p>480p,720p,1080p</p>
+                </div>
+            </div>
+            <div>
+                <div><img src="./th (12).jpeg" alt=""></div>
+                <div>
+                    <h2>Hum Hai Players</h2>
+                    <p>480p,720p,1080p</p>
+                </div>
+            </div>
+            <div>
+                <div><img src="./image-9122019-b.jpg" alt=""></div>
+                <div>
+                    <h2>New advantural movies</h2>
+                    <p>480p,720p,1080p</p>
+                </div>
+            </div>
+            <div>
+                <div><img src="./66508a1184926e54cf6d781f0a307f3d.jpg" alt=""></div>
+                <div>
+                    <h2>Jawan</h2>
+                    <p>480p,720p,1080p</p>
+                </div>
+            </div>
+            <div>
+                <div><img src="./8f3812755af0825d07ca83f81a2e0aa8.jpg" alt=""></div>
+                <div>
+                    <h2>Bhoot Kadarr</h2>
+                    <p>480p,720p,1080p</p>
+                </div>
+            </div>
+            <div>
+                <div><img src="./bajrangi-bhaijaan-poster-3804.jpg" alt=""></div>
+                <div>
+                    <h2>Bajarngi Bhaijan</h2>
+                    <p>480p,720p,1080p</p>
+                </div>
+            </div>
+            <div>
+                <div><img src="./Bhimaa_1687936291.jpg" alt=""></div>
+                <div>
+                    <h2>Bhimaa</h2>
+                    <p>480p,720p,1080p</p>
+                </div>
+            </div>
+            <div>
+                <div><img src="./HD-wallpaper-pathan-movie-angry-look-movie-poster-actor-shahrukh-khan.jpg" alt=""></div>
+                <div>
+                    <h2>Pathan</h2>
+                    <p>480p,720p,1080p</p>
+                </div>
+            </div>
+            <div>
+                <div><img src="./image-9122019-b.jpg" alt=""></div>
+                <div>
+                    <h2>Thae moon</h2>
+                    <p>480p,720p,1080p</p>
+                </div>
+            </div>
+            <div>
+                <div><img src="./66508a1184926e54cf6d781f0a307f3d.jpg" alt=""></div>
+                <div>
+                    <h2>Jawan</h2>
+                    <p>480p,720p,1080p</p>
+                </div>
+            </div>
+            <div>
+                <div><img src="./8f3812755af0825d07ca83f81a2e0aa8.jpg" alt=""></div>
+                <div>
+                    <h2>Bhoot Kadarr</h2>
+                    <p>480p,720p,1080p</p>
+                </div>
+            </div>
+            <div>
+                <div><img src="./bajrangi-bhaijaan-poster-3804.jpg" alt=""></div>
+                <div>
+                    <h2>Bajarngi Bhaijan</h2>
+                    <p>480p,720p,1080p</p>
+                </div>
+            </div>
+            <div>
+                <div><img src="./Bhimaa_1687936291.jpg" alt=""></div>
+                <div>
+                    <h2>Bhimaa</h2>
+                    <p>480p,720p,1080p</p>
+                </div>
+            </div>
+            <div>
+                <div><img src="./HD-wallpaper-pathan-movie-angry-look-movie-poster-actor-shahrukh-khan.jpg" alt=""></div>
+                <div>
+                    <h2>Pathan</h2>
+                    <p>480p,720p,1080p</p>
+                </div>
+            </div>
+            <div>
+                <div><img src="./image-9122019-b.jpg" alt=""></div>
+                <div>
+                    <h2>Thae moon</h2>
+                    <p>480p,720p,1080p</p>
+                </div>
+            </div>
+        </div>
+        <div class="Next">
+            <div> <h3>Next Page</h3></div>
+            <div><h3><a href="#">1</a></h3></div>
+            <div><h3><a href="#">2</a></h3></div>
+            <div><h3><a href="#">3</a></h3></div>
+            <div><h3><a href="#">4</a></h3></div>
+            <div><h3><pre><a href="#">. . . .</a></pre></h3></div>
+        </div>
+        <div class="copy">
+            <center><h3>Copyright © 2020. Created by ❤️ Vegamovies Team ❤️</h3></center>
+        </div>
+        <div class="last">
+            <center><h2>🏤 Contact Us | ⛽ Request Us | 📔 DMCA | 🏆 About Us | 📰 Sitemap</h2></center>
+        </div>
+    </div>
+    
+</body>
+</html>
